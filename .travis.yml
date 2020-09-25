@@ -6,3 +6,6 @@ install:
 before_install:
 - echo before install
 - python -m pip install -U pip
+
+script:
+  - python app.py
