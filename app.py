@@ -4,8 +4,8 @@ from blog.views import article_bp
 
 
 def create_app():
-    app = Flask("blog")
-    app.register_blueprint(article_bp, url_prefix="article")
+    app = Flask(__name__)
+    app.register_blueprint(article_bp, url_prefix="/article")
     return app
 
 
